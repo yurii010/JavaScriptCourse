@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     // Tabs
     const tabs = document.querySelectorAll(".tabheader__item");
     const tabsContent = document.querySelectorAll(".tabcontent");
@@ -112,33 +112,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", openModalAfterScroll); // { once: true } можна додати
 
     // Class
-
-    const data = [
-        [
-            "img/tabs/vegy.jpg",
-            "vegy",
-            'Меню "Фитнес"',
-            'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
-            5.7,
-        ],
-        [
-            "img/tabs/elite.jpg",
-            "elite",
-            'Меню "Премиум"',
-            "В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!",
-            13.75,
-        ],
-        [
-            "img/tabs/post.jpg",
-            "post",
-            'Меню "Постное"',
-            "Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.",
-            10.75,
-        ],
-    ];
-
     class Menu {
-        constructor(src, alt, title, description, price) {
+        constructor({ src, alt, title, description, price }) {
             this.src = src;
             this.alt = alt;
             this.title = title;
@@ -170,8 +145,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    const getResource = async () => {
+        const res = await axios.get("http://localhost:3000/menu");
+        return res.data;
+    };
+    const data = await getResource();
+
     data.forEach((item) => {
-        new Menu(...item).render();
+        new Menu({ ...item }).render();
     });
 
     // Fetch modal
@@ -189,14 +170,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const postDataToDB = async (url, data) => {
-        const res = await fetch(url, {
-            method: "POST",
-            headers: {
-                "Content-type": "application/json",
-            },
-            body: data,
-        });
-        return await res.json();
+        const res = await axios.post(url, data);
+        return res;
     };
 
     function postData(form) {
