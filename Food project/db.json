@@ -1,0 +1,135 @@
+{
+  "menu": [
+    {
+      "src": "img/tabs/vegy.jpg",
+      "alt": "vegy",
+      "title": "Меню \"Фитнес\"",
+      "description": "Меню \"Фитнес\" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!",
+      "price": "5.7",
+      "id": "17ce"
+    },
+    {
+      "src": "img/tabs/elite.jpg",
+      "alt": "elite",
+      "title": "Меню \"Премиум\"",
+      "description": "В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!",
+      "price": "13.75",
+      "id": "72fb"
+    },
+    {
+      "src": "img/tabs/post.jpg",
+      "alt": "post",
+      "title": "Меню \"Постное\"",
+      "description": "Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.",
+      "price": "10.75",
+      "id": "66b0"
+    }
+  ],
+  "requests": [
+    {
+      "id": "cd0d",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "1d43",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "5d4a",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "2a58",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "9470",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "ee24",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "ea16",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "e405",
+      "name": "asdf",
+      "phone": "sdfasdfa"
+    },
+    {
+      "id": "8ff1",
+      "name": "from microsoft window edge",
+      "phone": "123231231"
+    },
+    {
+      "id": "7d14",
+      "name": "from microsoft window edge",
+      "phone": "123231231"
+    },
+    {
+      "id": "7119",
+      "name": "from microsoft window edge",
+      "phone": "123231231"
+    },
+    {
+      "id": "efa9",
+      "name": "from microsoft window edge",
+      "phone": "123231231"
+    },
+    {
+      "id": "577a",
+      "name": "from microsoft window edge",
+      "phone": "123231231"
+    },
+    {
+      "id": "78ec",
+      "name": "asdf",
+      "phone": "asdf"
+    },
+    {
+      "id": "c845",
+      "name": "asdf",
+      "phone": "asdf"
+    },
+    {
+      "id": "275e",
+      "name": "asdf",
+      "phone": "asdf"
+    },
+    {
+      "id": "8809",
+      "name": "asdf",
+      "phone": "asdf"
+    },
+    {
+      "id": "a8d7",
+      "name": "asdf",
+      "phone": "adf"
+    },
+    {
+      "id": "030e",
+      "name": "asdf",
+      "phone": "asdf"
+    },
+    {
+      "id": "1091",
+      "name": "asdf",
+      "phone": "asdf"
+    },
+    {
+      "id": "569d",
+      "name": "adsf",
+      "phone": "asdf"
+    }
+  ]
+}
